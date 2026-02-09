@@ -1,6 +1,6 @@
 # CyberSecurityTools
 <details>
-<summary>tools</summary>
+<summary>reconnaissance and footprinting tools</summary>
 
 * google hacking database(GHDB)(google dorks) :~
     ```console
@@ -120,9 +120,53 @@
        ```console
          - traceroute <website_or_domain_name> 
        ```
+    //or 
+    - NetScanTool Pro :~
+       ```console
+            https://www.netscantools.com
+       ``` 
+    //or
+    - Pingplotter :~
+       ```console
+            https://www.pingplotter.com
+       ```              
 * eMailTrackerPro (email tracking tool) 
   //or 
-* MXtoolbox or Social Catfish or ip2location
-*          
-
+* MXtoolbox(reverse dns lookup)or Social Catfish or ip2location
+* theHarvester
+    - use this tool to perform enumeration on the LinkedIn and its command line tool
+    ```console
+        theHarvester -d microsoft -l 200 -b linkedin 
+    ```
+    - Gathering email addresses
+    ```console
+        theharvester -d microsoft.com -l 200 -b baidu
+    ```
+* Buzzsumo(get information on social media) 
+    ```console
+         https://buzzsumo.com 
+    ```                          
+* DNSRecon(reverse dns lookup) :~
+    ```console
+         dnsrecon -r <ip_range>
+    ```  
+* automated footprinting task advance tool :~ 
+    - Maltego(used for link analysis and footprinting)
+     ```console
+          https://www.maltego.com 
+     ``` 
+    - FOCA(to find metadata)  
+     ```console
+          https://www.elevenpaths.com
+     ```
+    - subfinder
+        - command-line too and subdomain discovery tool
+    - OSINT Framework :~
+     ```console
+          https://osintframework.com/
+     ```
+    - Recon-Dog
+        - all-in-one tool for all basic information gathering and command line tool 
+    - Billcipher
+        - supports Python 2, Python 3, and Ruby                                
 </details>
