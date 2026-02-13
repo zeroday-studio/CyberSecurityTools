@@ -170,3 +170,129 @@
     - Billcipher
         - supports Python 2, Python 3, and Ruby                                
 </details>
+
+<details>
+<summary>Scanning Network Tools</summary>
+
+* Scanning tool:
+    - nmap(network mapping) :~
+        - OS discovery
+        - host discovery
+        - port scanning
+        - service version discovery
+        - Netbios(using nse)
+        - SMTP enumeration
+        - nmap <option> <target_ip_address>
+    - hping
+        - ip spoofing
+    - Metasploit
+        - SMTP Enumeration
+    - NetScanTool Pro
+
+* Host Discovery :~
+    - ARP Ping Scan = -sn -PR 
+    - UDP Ping Scan = -sn -PU
+    - ICMP Ping Scan 
+        - ICMP ECHO Ping = -sn -PE
+            - ICMP ECHO Ping Sweep = -sn -PE <full_subnet>
+              - tools:
+                - Angry IP Scanner
+                 ```console
+                     https://angryip.org 
+                 ```
+                - Advanced IP Scanner
+                 ```console
+                     https://www.advanced-ip-scanner.com
+                 ```                        
+    - ICMP Timestamp Ping = -sn -PP
+    - ICMP Address Mask Ping = -sn -PM
+    - TCP Ping Scan 
+        - TCP SYN Ping = -sn -PS
+        - TCP ACK Ping = -sn -PA
+    - IP Protocol Scan = -sn -PO
+
+* Unicornscan :~
+    - OS Discovery tool 
+    - command-line tool
+* nmap script engine :~
+   ```comsole
+        nmap --script smb-os-discovery.nse <ip_or_subnet>
+   ```
+* IPv6/IPv4 Fingerprinting :~
+    - ping6 <ipv6_address> or nmap -6 <ipv6_addresss>
+    - ping4 <ip_address> or nmap -4 <ipadress>           
+* Proxy Switcher :~
+  ```console 
+       https://www.proxyswitcher.com
+  ```     
+* CyberGhost VPN Source :~
+  ```console
+        https://www.cyberghostvpn.com
+  ```  
+</details>
+
+<details>
+<summary>enumeration tools</summary>
+
+* nbtstat (use in windows):~
+   - display NetBIOS name tables, cache, and NetBIOS sessions
+* SnmpWalk :~
+   - SNMP enumaration
+* Active Directory Explorer (AD Explorer) :~
+   - LDAP Enumeration
+* superenum :~
+   - provides detailed enumeration data such as users, shares, domains, and services of the target
+* RPCScan :~    
+   - NFS enumeration
+* dig(Domain Information Groper) :~
+   - query DNS servers to obtain DNS record information
+   - using DNS zone transfer
+* nmap -p 25 --script=smtp-enum-users [Target IP Address] :~
+   - using this to enum SMTP 
+   - --script=argument , smtp-enum-users=script
+* Global Network Inventory :~
+   - for enumerate information about target system
+* enumerating user accounts :~
+   - PsTools :~
+      - PsExec 
+      - PsFile
+      - PsGetSid
+      - PsKill
+      - PsInfo
+      - PsList
+      - PsLoggedOn
+      - PsLogList
+      - PsPasswd
+      - PsShutdown
+* Net view :~
+   - command-line utility and ist of all the shared resources of a remote host or workgroup
+
+<details>
+<summary>Vulnerability Analysis</summary>
+
+* Tools :~
+  - Nessus
+  - GFI Lan Guard
+  - openvas
+  - Nikto
+  - Qualys
+  - skipfish
+  
+* AI-Powered Vulnerability Assessment Tool :~
+  - Equixly
+  - SmartScanner 
+  - CodeDefender 
+  - Corgea 
+  - Fluxguard 
+  - DryRun Security 
+  - Pentest Copilot  
+
+* websites for stored previous vuln :~
+  - Common Vulnerability Scorimg System(CVSS)
+  - Common Vulnerability and Explosures(CVE)
+  - National Vulnerability Database(NVD)
+  - Common Weakness Enumaration(CWE)
+
+
+
+</details>         
